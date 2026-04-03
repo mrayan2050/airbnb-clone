@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb – Holiday Rentals, Homes, Experiences & Places</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="nav">
+
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FF385C" d="M16 1C12.7 1 10.1 4.1 10.1 7.9c0 2.6 1.2 4.9 2.9 6.3
+          -3.3 1.5-5.3 4.2-5.3 7.2 0 4.4 3.7 7.6 8.3 7.6s8.3-3.2 8.3-7.6
+          c0-3-2-5.7-5.3-7.2 1.7-1.4 2.9-3.7 2.9-6.3C21.9 4.1 19.3 1 16 1z
+          m0 11.4c-1.9 0-3.5-1.6-3.5-3.5S14.1 5.4 16 5.4s3.5 1.6 3.5 3.5
+          -1.6 3.5-3.5 3.5zm0 12.2c-2.5 0-4.5-1.7-4.5-3.8s2-3.8 4.5-3.8
+          4.5 1.7 4.5 3.8-2 3.8-4.5 3.8z"/>
+      </svg>
+      <span class="nav-logo-text">airbnb</span>
+    </a>
+
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <div class="search-bar">
+        <div class="search-pill">
+          <span class="search-pill-label">Where</span>
+          <span class="search-pill-value">Search destinations</span>
+        </div>
+        <div class="search-pill">
+          <span class="search-pill-label">Check in</span>
+          <span class="search-pill-value">Add dates</span>
+        </div>
+        <div class="search-pill">
+          <span class="search-pill-label">Check out</span>
+          <span class="search-pill-value">Add dates</span>
+        </div>
+        <div class="search-pill">
+          <span class="search-pill-label">Who</span>
+          <span class="search-pill-value">Add guests</span>
+        </div>
+        <button class="search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Actions -->
+    <div class="nav-actions">
+      <button class="btn-host">Airbnb your home</button>
+
+      <button class="btn-globe" aria-label="Choose language and currency">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                   15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
+        </svg>
+      </button>
+
+      <button class="btn-menu" aria-label="Main menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round">
+          <line x1="3"  y1="6"  x2="21" y2="6"/>
+          <line x1="3"  y1="12" x2="21" y2="12"/>
+          <line x1="3"  y1="18" x2="21" y2="18"/>
+        </svg>
+        <div class="avatar">A</div>
+      </button>
+    </div>
+
+  </nav>
+
+  <!-- ============================================================
+       CATEGORY BAR
+  ============================================================ -->
+  <div class="cat-bar" id="catBar">
+    <!-- Category pills injected by script.js -->
+    <button class="filter-btn" id="filterBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="4"  y1="6"  x2="20" y2="6"/>
+        <line x1="8"  y1="12" x2="16" y2="12"/>
+        <line x1="11" y1="18" x2="13" y2="18"/>
+      </svg>
+      Filters
+    </button>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main class="main">
+
+    <!-- Total-price toggle -->
+    <div class="price-toggle">
+      <div class="toggle-switch" id="toggleSwitch"></div>
+      <span class="toggle-label">Display total price</span>
+    </div>
+
+    <!-- Listing cards injected by script.js -->
+    <div class="listings-grid" id="listingsGrid"></div>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-col">
+        <p class="footer-col-title">Support</p>
+        <ul>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">AirCover</a></li>
+          <li><a href="#">Anti-discrimination</a></li>
+          <li><a href="#">Disability support</a></li>
+          <li><a href="#">Cancellation options</a></li>
+          <li><a href="#">Report neighbourhood concern</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Hosting</p>
+        <ul>
+          <li><a href="#">Airbnb your home</a></li>
+          <li><a href="#">AirCover for Hosts</a></li>
+          <li><a href="#">Hosting resources</a></li>
+          <li><a href="#">Community forum</a></li>
+          <li><a href="#">Hosting responsibly</a></li>
+          <li><a href="#">Airbnb-friendly apartments</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Airbnb</p>
+        <ul>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">New features</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Gift cards</a></li>
+          <li><a href="#">Airbnb.org emergency stays</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2025 Airbnb, Inc.</span>
+        <span>·</span><a href="#">Privacy</a>
+        <span>·</span><a href="#">Terms</a>
+        <span>·</span><a href="#">Sitemap</a>
+        <span>·</span><a href="#">Company details</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" title="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7
+                     a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="#" title="X / Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17
+                     l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08
+                     l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" title="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
